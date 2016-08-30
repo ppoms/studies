@@ -1,3 +1,5 @@
+#Factorial
+
 def factorial(f1)
     factorial = f1
     if factorial == 0
@@ -11,6 +13,8 @@ def factorial(f1)
     return factorial
 end
 
+#Reverse
+
 def reverse(string)
     string_reverse = string.dup
     j = string.length - 1
@@ -20,6 +24,8 @@ def reverse(string)
     end
     return string_reverse
 end
+
+#Sort
 
 def sort(a1)
     aux = 0
@@ -34,6 +40,8 @@ def sort(a1)
     end
     return a1
 end
+
+#Upcase
 
 def upcase(string)
     hash_abc = {"a" => "A", "b" => "B", "c" => 'C', "d" => 'D', "e" => 'E', "f" => 'F', "g" => 'G', "h" => 'H', "i" => 'I', "j" => 'J', "k" => 'K',
