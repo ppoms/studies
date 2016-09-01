@@ -2,7 +2,7 @@ class Product
     attr_reader :title, :price, :manufacturer
     attr_accessor :barcode, :code
 
-    def initialize hash
+    def initialize(hash)
         self.title = hash['title']
         self.price = hash['price']
         self.manufacturer = hash['manufacturer_code']
@@ -36,7 +36,7 @@ class Product
     
     private
     def generate_control_code
-        @id_control = "#{SimpleStore::PRODUCT_TYPES[:Product]}--#{SimpleStore::AUTHORIZED_MANUFACTURERS.fetch @manufacturer}--#{@barcode}"
+        @id_control = "#{SimpleStore::PRODUCT_TYPES[:"#{self.class}"]}--#{SimpleStore::AUTHORIZED_MANUFACTURERS[:"#{manufacturer}"]}--#{barcode}"
     end
     
 end

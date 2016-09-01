@@ -17,6 +17,7 @@ module DiscountEligible
   #
   def days_to_expire
     # TODO
+    @days_to_expire = (Date.parse(@expiration_date) - Date.today).to_i
   end
 
   #
@@ -24,6 +25,7 @@ module DiscountEligible
   #
   def discount_amount
     # TODO
+    @discount_amount = (discount_percentage * @price).round(2)
   end
 
   #
@@ -31,5 +33,7 @@ module DiscountEligible
   # The value must be rounded to at most 2 decimal places.
   #
   def discounted_price
+    @discounted_price = (@price - discount_amount).round(2)
   end
+  
 end
