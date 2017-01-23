@@ -20,10 +20,10 @@ end
 
 timer_start = Time.now
 
-# O programa atual executa em aproximadamente 10 segundos, pois sÃ£o executados
-# 10 jobs sequencias com duraÃ§Ã£o de 1 segundo cada.
+# O programa atual executa em aproximadamente 10 segundos, pois são executados
+# 10 jobs sequencias com duração de 1 segundo cada.
 
-# O seu trabalho Ã© modificar o cÃ³digo abaixo para que este programa execute
+# O seu trabalho é modificar o código abaixo para que este programa execute
 # em aproximadamente 1 segundo.
 
 # Executa os jobs
@@ -35,6 +35,6 @@ end
 
 threads.each { |thr| thr.join }
 
-# Imprime o tempo de execuÃ§Ã£o do programa
+# Imprime o tempo de execução do programa
 EXECUTION_TIME = Time.now - timer_start
 puts "O programa levou #{EXECUTION_TIME} segundos para executar"

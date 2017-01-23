@@ -36,6 +36,6 @@ class Consumer
   end
 end
 
-# NÃ£o Ã© necessÃ¡rio adicionar o cÃ³digo de execuÃ§Ã£o do Produtor e do Consumidor,
+# Não é necessário adicionar o código de execução do Produtor e do Consumidor,
 # basta implementar suas classes.
-# O corretor deste exercÃ­cio executarÃ¡ tanto o Produtor quanto o Consumidor.
+# O corretor deste exercicio executará¡ tanto o Produtor quanto o Consumidor.
